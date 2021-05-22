@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Open Sans', 'Arial', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto; 
+  background-color: aqua;
+}
+
+.site-form {
+display: flex;
+/* flex-direction: column; */
+justify-content: space-between;
+}
+
+.form__h1{
+  font-weight: bold;
+}
+
+.site-form__label{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.form-check-control{
+margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.label__input:checked+.tennis {
+  background-image: url(./icons/table-tennis.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  box-shadow:0 0 0.1px 3px pink;
+}
+
+.label__input:checked+.basketball {
+  background-image: url(./icons/basketball-ball.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  box-shadow:0 0 0.1px 3px pink;  
+}
+
+.label__input:checked+.valleyball {
+  background-image: url(./icons/volleyball-ball.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  box-shadow:0 0 0.1px 3px pink;
+}
+
+.label__input:checked+.hockey {
+  background-image: url(./icons/hockey-puck.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  box-shadow:0 0 0.1px 3px pink;
+}
+
+.label__input:disabled:checked~.form-check-control {
+  box-shadow:0 0 0 0;
+ border: 2px solid gray;
+}
+
+.label__input:disabled~.checkbox-text {
+ color: gray;
+ font-weight: 500;
+
+}
+
+.participated-check-control{
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.submit-link{
+  display: inline-block;
+  display: flex;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.submit-btn{
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color: cornflowerblue;
+  margin: 0 auto;
+}
